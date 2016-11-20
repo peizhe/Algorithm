@@ -5,6 +5,7 @@ package LeetCodeSecondMedium;
  * 		分解成2的幂乘积最大
  * 	当n >= 8时：
  * 		分解成3的幂乘积最大
+ * 
  * @author MG
  *
  */

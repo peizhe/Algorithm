@@ -1,41 +1,43 @@
 package LeetCodeSecondMedium;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Stack;
 
 import Structure.TreeNode;
 
 /**
- * 操作树
+ * 思想 :
+ * 	中序遍历前k个
  * 
  * @author MG
  *
  */
-public class BinaryTreeInorderTraversal94 {
-	public List<Integer> inorderTraversal(TreeNode root) {
-		List<Integer> res = new ArrayList<Integer>();
-		if(root == null){
-			return res;
-		}
-		
-		//链表模拟队列
+public class KthSmallestElementInABST230 {
+	
+	
+	public int kthSmallest(TreeNode root, int k) {
+        if(root == null || k < 1) {
+        	return -1;
+        }
+        
         Stack<TreeNode> stack = new Stack<TreeNode>();
         
         TreeNode current = root;
-        while(current != null || !stack.isEmpty()) {
+        while(k > 0 && (current != null || !stack.isEmpty())) {
         	while(current != null) {
         		stack.add(current);
         		current = current.left;
         	}
         	
         	current = stack.pop();
-        	res.add(current.val);
+        	
+        	if(--k == 0) return current.val;
+        	
         	current = current.right;
         }
         
-        return res;
+        return -1;
     }
+	
 	/**
 	 * @param args
 	 */

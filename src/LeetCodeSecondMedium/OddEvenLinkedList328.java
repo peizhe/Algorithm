@@ -3,7 +3,6 @@ package LeetCodeSecondMedium;
 import Structure.ListNode;
 
 /**
- * 下面这种方法很容易理解
  * @author MG
  *
  */

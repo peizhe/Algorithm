@@ -7,7 +7,7 @@ package LeetCodeSecondMedium;
  * @author MG
  *
  */
-public class BulbSwitche319 {
+public class BulbSwitcher319 {
 	public int bulbSwitch(int n) {
         return n > 0 ? (int)Math.sqrt(n) : 0;
     }
