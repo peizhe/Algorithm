@@ -35,8 +35,8 @@ public class MapAndSet {
 		 * 		当table中元素个数达到table.length * loadFactor时，需要建立新的table,将旧的table中的元素全部取出来进行散列重新保存到新的table
 		 * 	
 		 * 计算散列地址的方法 : key类型是Object
-		 * 		int h = hash(key.hashCode())//key.hashCode()是根据内存地址导出的散列码
-		 * 		int index = h & (table.length - 1)//table.length 一般是2的幂
+		 * 		int h = hash(key.hashCode()) //key.hashCode()是根据内存地址导出的散列码
+		 * 		int index = h & (table.length - 1) //table.length 一般是2的幂
 		 * 
 		 * 		index是最终的散列地址(元素遍历的顺序也是根据这个地址来的)
 		 * 
