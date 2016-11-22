@@ -21,7 +21,7 @@ public class BestTimeBuySellStockCooldown309 {
 	 * 		rest[i] = max(sell[i - 1], buy[i - 1], rest[i - 1])
 	 * 
 	 * Where price is the price of day i. All of these are very straightforward. They simply represents :
-	 * (1) We have to `rest` before we `buy` and 
+	 * (1) We have to `rest` before we `buy` 
 	 * (2) we have to `buy` before we `sell`
 	 * 
 	 * One tricky point is how do you make sure you sell before you buy, since from the equations it seems that [buy, rest, buy] is entirely possible.
@@ -44,6 +44,7 @@ public class BestTimeBuySellStockCooldown309 {
 	        prevSell = sell;
 	        sell = Math.max(prevBuy + price, prevSell);
 	    }
+	    
 	    return sell;
 	}
 	
@@ -59,6 +60,7 @@ public class BestTimeBuySellStockCooldown309 {
 	    }
 	    return Math.max(buy, Math.max(sell, rest));
     }
+	
 	/**
 	 * @param args
 	 */
