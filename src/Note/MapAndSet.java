@@ -69,7 +69,7 @@ public class MapAndSet {
 	/**
 	 * set接口，父接口是Collection
 	 * 
-	 * 	set底层是拿map实现的,所以set的遍历和map的遍历是想通的
+	 * 	set底层是拿map实现的,所以set的遍历和map的遍历是相通的
 	 * 		遍历元素的顺序和元素加入set的顺序是不同的,它和元素散列后的地址的顺序相同
 	 *		每次遍历set得到的顺序是相同的,只是和加入set的顺序不同
 	 * 
