@@ -12,28 +12,19 @@ import Structure.TreeNode;
  */
 public class BinaryTreeRightSideView199 {
 
-	List<Integer> list = new ArrayList<Integer>();
 	public List<Integer> rightSideView(TreeNode root) {
-		if(root == null){
-			return list;
-		}
-		
-		dfs(root, 0);
-		
-		return list;
-	}
+        if(root == null) return new ArrayList<Integer>();
+        List<Integer> res = new ArrayList<Integer>();
+        helper(root, res ,0);
+        
+        return res;
+    }
 	
-	private void dfs(TreeNode root, int level){
-		if(list.size() <= level){
-			list.add(root.val);
-		}
+	private void helper(TreeNode root, List<Integer> res, int level) {
+		if(res.size() == level) res.add(root.val);
 		
-		if(root.right != null){
-			dfs(root.right,level + 1);
-		} 
+		if(root.right != null) helper(root.right, res, level + 1);
 		
-		if(root.left != null){
-			dfs(root.left, level + 1);
-		}
+		if(root.left != null) helper(root.left, res, level + 1);
 	}
 }
