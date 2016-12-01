@@ -1,5 +1,7 @@
 package LeetCodeSecondMedium;
 
+import Structure.TreeLinkNode;
+
 public class PopulatingNextRightPointersInEachNode116 {
 	public void connect(TreeLinkNode root) {
 		if(root == null){
@@ -18,15 +20,6 @@ public class PopulatingNextRightPointersInEachNode116 {
 			}
 			
 			root = root.left;
-		}
-	}
-
-	public class TreeLinkNode {
-		int val;
-		TreeLinkNode left, right, next;
-
-		TreeLinkNode(int x) {
-			val = x;
 		}
 	}
 }

@@ -1,14 +1,8 @@
 package Leetcode;
 
-public class PopulatingNextRightPointersinEachNode {
-	public class TreeLinkNode {
-		int val;
-		TreeLinkNode left, right, next;
+import Structure.TreeLinkNode;
 
-		TreeLinkNode(int x) {
-			val = x;
-		}
-	}
+public class PopulatingNextRightPointersinEachNode {
 	
 	//这个思想真是太牛叉了
 	public void connect(TreeLinkNode root) {
