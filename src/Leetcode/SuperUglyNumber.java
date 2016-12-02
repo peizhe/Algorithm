@@ -7,7 +7,7 @@ package Leetcode;
 public class SuperUglyNumber {
 	public int nthSuperUglyNumber(int n, int[] primes) {
 		int len = primes.length;
-		//存储primes中每个质数的下标（相当于是len个指针，每个指针的小标都是从0开始）
+		//存储primes中每个质数的下标（相当于是len个指针，每个指针的下标都是从0开始）
         int[] index = new int[len];
         //存储结果数字
         int[] result = new int[n];
