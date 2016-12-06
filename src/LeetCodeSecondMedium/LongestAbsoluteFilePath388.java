@@ -7,4 +7,11 @@ public class LongestAbsoluteFilePath388 {
         
         return str.length;
     }
+	
+	private int getMaxLength(String[] dirs, int index, StringBuilder sb) {
+		for(int i = 0; i < dirs.length; i++) {
+			int lastIndex = dirs[i].lastIndexOf("\t");
+			
+		}
+	}
 }
