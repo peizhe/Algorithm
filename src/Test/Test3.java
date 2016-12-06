@@ -1,5 +1,8 @@
 package Test;
 
+import java.util.ArrayList;
+import java.util.Map;
+
 public class Test3 {
 	static int x, y;
 	
@@ -14,10 +17,20 @@ public class Test3 {
 	}
 
 	public static void main(String[] mh) {
-		x--;
-		method();
-		System.out.println(x + y + ++x);
+//		x--;
+//		method();
+//		System.out.println(x + y + ++x);
+//		
+//		System.out.println("abc".startsWith(""));
 		
-		System.out.println("abc".startsWith(""));	
+		
+//		short a = 129;
+//		byte b = (byte)a;
+//		System.out.println(b);
+		
+		String s = "hello";
+		char[] ch = {'h','e','l','l','o'};
+		System.out.println(s.equals(ch));
+		
 	}
 }
