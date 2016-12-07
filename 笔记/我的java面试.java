@@ -12,7 +12,7 @@
 
 					  每个栈帧包含三个部分：
 					  	本地变量数组 : 
-					  	操作数栈 :
+					  	操作数栈 : 
 					  	方法所属类的常量池引用: 
 
 			(3) 本地方法栈（Native Method Stack）: 当程序通过 JNI（Java Native Interface）调用本地方法（如C或者 C++ 代码）时，就根据本地方法的语言类型建立相应的栈。
@@ -339,3 +339,5 @@
 
 -- 线程安全的几个集合:
 	Hashtable, Vector, Stack,Enumeration
+
+-- JAVA 语言的下面几种数组复制方法中，哪个效率最高？ System.arraycopy()效率最高
