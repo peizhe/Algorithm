@@ -1,8 +1,5 @@
 package Test;
 
-import java.util.ArrayList;
-import java.util.Map;
-
 public class Test3 {
 	static int x, y;
 	
