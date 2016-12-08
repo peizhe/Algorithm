@@ -341,3 +341,5 @@
 	Hashtable, Vector, Stack,Enumeration
 
 -- JAVA 语言的下面几种数组复制方法中，哪个效率最高？ System.arraycopy()效率最高
+
+-- 对于广义表的head()和tail()的理解了，head()是第一个元素，tail()是除了第一个元素的余下的。如果只有一个那么尾部是空

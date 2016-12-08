@@ -22,6 +22,5 @@ public class BuyApples {
 		int n = sc.nextInt();
 		int res = getMinPackage(n);
 		System.out.println(res == 0 ? -1 : res);
-		
 	}
 }
