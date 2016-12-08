@@ -32,9 +32,10 @@ public class Test3 {
 		
 //		System.out.println(Math.floor(-8.5));
 		
-		 String str = "1234";
-	     changeStr(str);
-	     System.out.println(str);
+//		 String str = "1234";
+//	     changeStr(str);
+//	     System.out.println(str);
+		
 	}
 	
 	public static void changeStr(String str) {
