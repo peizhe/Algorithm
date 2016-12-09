@@ -1,4 +1,5 @@
 package NiuKe;
+
 /**
  * Ï´ÅÆ
  * 
@@ -6,6 +7,7 @@ package NiuKe;
  *
  */
 public class WYShuffle {
+	
 	public static void shuffle(long[] nums) {
 		return;
 	}
@@ -14,7 +16,6 @@ public class WYShuffle {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
 	}
 
 }
