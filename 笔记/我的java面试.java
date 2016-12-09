@@ -343,3 +343,36 @@
 -- JAVA 语言的下面几种数组复制方法中，哪个效率最高？ System.arraycopy()效率最高
 
 -- 对于广义表的head()和tail()的理解了，head()是第一个元素，tail()是除了第一个元素的余下的。如果只有一个那么尾部是空
+
+-- 非构造方法的方法名可以与类名相同
+	public class Test {
+		public void Test() {
+
+		}
+	}
+
+-- 内部类的声明方式:
+	class Enclosingone {
+    //非静态内部类
+	    public class InsideOne {}
+	    //静态内部类
+	    public static class InsideTwo{}
+	}
+	 
+	public class Mytest02{
+	    public static void main(String args []){
+	        Enclosingone.InsideOne obj1 = new Enclosingone().new InsideOne();//非静态内部类对象
+	        Enclosingone.InsideTwo obj2 = new Enclosingone.InsideTwo();//静态内部类对象
+	    }
+	}
+
+-- Java 使用了中间缓存变量机制：
+	i = i++;等同于：
+	temp = i； (等号右边的i)
+	i = i + 1;      (等号右边的i)
+	i = temp;   (等号左边的i)
+
+	而i = ++i;则等同于：
+	i = i+1;
+	temp = i;
+	i = temp;
