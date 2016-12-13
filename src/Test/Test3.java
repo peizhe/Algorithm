@@ -1,26 +1,9 @@
 package Test;
 
 public class Test3 {
-	static int x, y;
-	
-	static {
-		x = 1;
-	}
-
-	static void method() {
-		System.out.println(x);
-		y = x ++ + ++ x;
-		System.out.println(x + " " + y);
-	}
+	private static final String MESSAGE = "taobao";
 
 	public static void main(String[] mh) {
-//		x--;
-//		method();
-//		System.out.println(x + y + ++x);
-//		
-//		System.out.println("abc".startsWith(""));
-		
-		
 //		short a = 129;
 //		byte b = (byte)a;
 //		System.out.println(b);
@@ -35,6 +18,23 @@ public class Test3 {
 //		 String str = "1234";
 //	     changeStr(str);
 //	     System.out.println(str);
+		
+		
+//		System.out.println(Math.cos(Math.toRadians(42)));
+		
+		
+//		String a = "tao" + "bao";
+//      final String b = "tao";
+//      final String c = "bao";
+//      System.out.println(a == MESSAGE);
+//      System.out.println((b + c) == MESSAGE);
+		
+		
+//		String a = "tao" + "bao";
+//      String b = "tao";
+//      String c = "bao";
+//      System.out.println(a == MESSAGE);
+//      System.out.println((b + c) == MESSAGE);
 		
 	}
 	

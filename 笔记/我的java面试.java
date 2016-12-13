@@ -376,3 +376,40 @@
 	i = i+1;
 	temp = i;
 	i = temp;
+
+-- 注意两种方式的不同
+	public class Test3 {
+		private static final String MESSAGE = "taobao";
+
+		public static void main(String[] mh) {
+			
+			String a = "tao" + "bao";
+		    final String b = "tao";
+		    final String c = "bao";
+		    System.out.println(a == MESSAGE); //true
+		    System.out.println((b + c) == MESSAGE);//true(编译器在编译时就将 b + c 放在了方法区)
+				
+				
+			String a = "tao" + "bao";
+		    String b = "tao";
+		    String c = "bao";
+		    System.out.println(a == MESSAGE); //true
+		    System.out.println((b + c) == MESSAGE); //false (计算b + c 使用StringBuffer，然后转化成字符串)
+		}
+	}
+
+-- Enum 的使用 :
+	enum AccountType {
+    	SAVING, FIXED, CURRENT;
+	    private AccountType() {
+	        System.out.println(“It is a account type”);
+	    }
+	}
+
+	class EnumOne {
+	    public static void main(String[]args) {
+	        System.out.println(AccountType.FIXED);
+	    }
+	}
+
+	会输出3次“It is a account type”，因为 Enum 类型的每一项相当于都是一个实例，都会调用构造方法

@@ -33,10 +33,10 @@
     						b，bint为回归系数估计值和它们的置信区间，
     						r，rint为残差及其置信区间，
     						stats是用于检验回归模型的统计量，有四个数值 : 第一个是 R2，其中 R 是相关系数，第二个是 F 统计量值，第三个是与统计量 F 对应的概率 P，第四个是 an estimate of the error variance（一个错误的方差估计）。
-
     		
 
 		2.基于实例的算法 : 常见的算法包括 k-Nearest Neighbor(KNN), 学习矢量量化（Learning Vector Quantization， LVQ），以及自组织映射算法（Self-Organizing Map ， SOM）。
+
 		3.正则化算法 : 常见的算法包括：Ridge Regression， Least Absolute Shrinkage and Selection Operator（LASSO），以及弹性网络（Elastic Net）。
 		4.决策树学习 : 决策树模型常常用来解决分类和回归问题,常见的算法包括：分类及回归树（Classification And Regression Tree， CART）， ID3 (Iterative Dichotomiser 3)， 
 					   C4.5， Chi-squared Automatic Interaction Detection(CHAID), Decision Stump, 随机森林（Random Forest）， 多元自适应回归样条（MARS）以及梯度推进机（Gradient Boosting Machine， GBM）
@@ -49,6 +49,15 @@
 		10.深度学习 : 深度学习算法是对人工神经网络的发展。常见的深度学习算法包括：受限波尔兹曼机（Restricted Boltzmann Machine， RBN）， Deep Belief Networks（DBN），卷积网络（Convolutional Network）, 堆栈式自动编码器（Stacked Auto-encoders）。
 		11.降低维度算法 : 常见的算法包括：主成份分析（Principle Component Analysis， PCA），偏最小二乘回归（Partial Least Square Regression，PLS）， Sammon映射，多维尺度（Multi-Dimensional Scaling, MDS）,  投影追踪（Projection Pursuit）等。
 		12.集成算法 : 常见的算法包括：Boosting， Bootstrapped Aggregation（Bagging）， AdaBoost，堆叠泛化（Stacked Generalization， Blending），梯度推进机（Gradient Boosting Machine, GBM），随机森林（Random Forest），GBDT（Gradient Boosting Decision Tree）。
+
+
+文本处理相关内容:
+	TF-IDF 算法 : TF(Term Frequence) IDF(Inverse Document Frequence)
+	空间向量模型(VSM) : 把每一个分词看做是一个维度，对应出现的频率看做在这个维度的值, 可以进行相似度的计算
+		相似度计算的几种方法(向量a和向量b):
+			1.点积 a · b
+			2.余弦相似度(计算夹角)
+			3.jaccard相似度(计算向量a和向量b中相同元素的个数 / 总的不重复的元素个数)
 
 matlab :
 	1.fminunc() : 最小值函数
