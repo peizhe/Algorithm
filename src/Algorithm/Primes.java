@@ -75,17 +75,6 @@ public class Primes {
 	}
 	
 	/**
-	 * 判断一个数是否为素数
-	 * 	米勒罗宾判定法
-	 * 	
-	 * @param n
-	 * @return
-	 */
-	public static boolean isPrime(int n) {
-		return true;
-	}
-	
-	/**
 	 * 假设 b很大,求a * b % n 的结果
 	 * 
 	 * @param a
