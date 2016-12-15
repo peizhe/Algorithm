@@ -7,12 +7,6 @@ package Leetcode;
  */
 public class PalindromeLinkedList{
 	
-	public class ListNode {
-		int val;
-		ListNode next;
-		ListNode(int x) { val = x; }
-	}
-	
 	public static boolean isPalindrome(ListNode head) {
 		if(head == null || head.next == null){
 			return true;
@@ -77,12 +71,6 @@ public class PalindromeLinkedList{
     }  
 	
 	public static void main(String mh){
-		ListNode a = (new PalindromeLinkedList()).new ListNode(1);
-		ListNode b = (new PalindromeLinkedList()).new ListNode(2);
-		
-		a.next = b;
-		
-		System.out.println(isPalindrome(a));
 		
 	}
 }
